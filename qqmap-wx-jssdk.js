@@ -482,7 +482,7 @@ class QQMapWX {
           output: "json",
           key: l.key
         };		
-        var mode = i.mode || 'driving',
+        var mode = i.mode || 'driving';
         var m = function m(o) {
           k.from = o.latitude + "," + o.longitude;
           wx.request(Utils.buildWxRequestConfig(i, {
